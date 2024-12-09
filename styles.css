@@ -1,0 +1,239 @@
+*{
+    box-sizing: bording-box;
+    margin: 0;
+}
+body{
+   font-family: Hind Mysuru, sans-serif   ;
+    background-color: rgb(120, 146, 193);
+
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(120, 146, 193);
+    font-size: 1rem;
+    font-weight: 500;
+}
+a:hover{
+    color: rgba(0, 23, 78, 0.425);
+}
+header{
+    position: relative;
+    padding: 0 2rem;
+    background-color: cornsilk;
+}
+#navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+#logo{
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+    justify-content: center;
+}
+#navbar #logo a{
+    font-size: 1.5rem;
+}
+#navbar .links{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+#landing{
+    width: 90%;
+    color: cornsilk;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+#landing h1{
+    font-size: 60px;
+}
+#landing p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: cornsilk;
+}
+.hero-button{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(42, 58, 204);
+    border: 2px solid rgba(0, 20, 67, 0.425);
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: 700;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-button:hover{
+    border: 1px solid  rgba(0, 20, 67, 0.425);
+    background: rgba(255, 201, 107, 0.455);
+    transition: 1s;
+}
+
+
+/* second page */
+
+#content{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+#content h1{
+    font-size: 32px;
+    font-weight: 700;
+}
+#content p{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18x;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.col{
+    flex-basis: 31%;
+    background: rgb(70, 94, 153);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.row .col h2{
+    text-align: center;
+    font-weight: 600px;
+    margin: 10px 0;
+}
+.col:hover{
+    box-shadow: 0 0 10px 5px rgba(0, 20, 67, 0.425);
+}
+#visual{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+
+}
+.visual-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.visual-col img{
+    width: 100%;
+}
+
+/* third page */
+
+#title{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+#title p{
+    padding-top: 10px;
+}
+.title-col{
+    flex-basis: 51%;
+    border-radius: 10px;
+   
+    padding: 10px;
+}
+.title-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.title-col p{
+    padding: 0;
+    text-align: left;
+}
+.title-col h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+#cta{
+    margin: 50px auto;
+    width: 80%;
+    background-image: url(cta.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+#cta h3{
+    color: cornsilk;
+    margin-bottom: 10px;
+    padding: 0;
+    font-size: 28px;
+}
+#back-to-top{
+    display: flex;
+    justify-content: center;
+}
+button {
+    background-color: cornsilk;
+    border: none;
+    border-radius: 10px;
+    color: rgb(120, 146, 193);;
+    padding: 15px 32px;
+    margin-bottom: 10px;   
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+/*( mobile */
+@media (max-width:700px) {
+    #navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #navbar .links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    #landing{
+        margin-top: 20px;
+    }
+    #landing h1{
+        font-size: 50px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    #cta h3{
+        font-size: 24px;
+    }
+ 
+    
+}
+
+
+
+
+/*( mobile  second page */
